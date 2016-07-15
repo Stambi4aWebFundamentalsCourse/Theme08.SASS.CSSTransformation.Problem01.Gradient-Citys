@@ -1,0 +1,274 @@
+﻿body {
+  background-image: linear-gradient(to bottom, #808080, white); }
+  body #wrapper {
+    width: 950px;
+    height: 1450px;
+    margin: 0 auto;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #808080;
+    border: 3px double #808080;
+    padding: 20px; }
+    body #wrapper header, body #wrapper main, body #wrapper footer {
+      margin: 0 auto; }
+
+section {
+  width: 900px;
+  border: 3px double #808080;
+  padding: 0 20px;
+  margin: 10px auto; }
+
+section.list-section {
+  width: 850px;
+  border: 1px ridge #808080;
+  padding: 0 20px;
+  margin: 10px auto;
+  padding: 0 10px; }
+
+h1, h2, p, a {
+  text-align: center; }
+
+h1 {
+  font-size: 35px; }
+
+h2 {
+  font-size: 26px; }
+
+p {
+  font-size: 16px; }
+
+ul {
+  list-style-type: none; }
+  ul li {
+    display: inline-block; }
+    ul li a {
+      text-decoration: none; }
+
+ul#button-list {
+  display: inline-block;
+  text-align: center;
+  margin-left: 150px; }
+  ul#button-list li {
+    text-align: center;
+    /*padding: 5px 10px;*/
+    background-color: white;
+    margin-left: 50px;
+    border: 3px double #808080; }
+    ul#button-list li:hover {
+      background-image: linear-gradient(to bottom, #808080, white);
+      color: white; }
+    ul#button-list li a {
+      width: 80px;
+      height: 26px;
+      display: inline-block;
+      padding: 5px 10px;
+      min-width: 80px; }
+      ul#button-list li a:hover {
+        background-image: linear-gradient(to bottom, #808080, white);
+        color: white; }
+
+a {
+  color: #808080; }
+
+ul#bottom-links {
+  display: block;
+  text-align: center; }
+  ul#bottom-links li {
+    display: block; }
+
+footer > section > a {
+  display: block;
+  text-align: center; }
+
+ul#vertical li.purple {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, purple, white); }
+
+ul#vertical li.blue {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, blue, white); }
+
+ul#vertical li.green {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, green, white); }
+
+ul#vertical li.yellow {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, yellow, white); }
+
+ul#vertical li.orange {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, orange, white); }
+
+ul#vertical li.red {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, red, white); }
+
+ul#horizontal li.purple {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, purple, white); }
+
+ul#horizontal li.blue {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, blue, white); }
+
+ul#horizontal li.green {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, green, white); }
+
+ul#horizontal li.yellow {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, yellow, white); }
+
+ul#horizontal li.orange {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, orange, white); }
+
+ul#horizontal li.red {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, red, white); }
+
+ul#diagonal li.purple {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right, purple, white); }
+
+ul#diagonal li.blue {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right, blue, white); }
+
+ul#diagonal li.green {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right, green, white); }
+
+ul#diagonal li.yellow {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right, yellow, white); }
+
+ul#diagonal li.orange {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right, orange, white); }
+
+ul#diagonal li.red {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right, red, white); }
+
+ul#radial li.purple {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: radial-gradient(purple, white); }
+
+ul#radial li.blue {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: radial-gradient(blue, white); }
+
+ul#radial li.green {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: radial-gradient(green, white); }
+
+ul#radial li.yellow {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: radial-gradient(yellow, white); }
+
+ul#radial li.orange {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: radial-gradient(orange, white); }
+
+ul#radial li.red {
+  width: 130px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  background-image: radial-gradient(red, white); }
+

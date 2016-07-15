@@ -1,0 +1,235 @@
+﻿$default-background-color: #808080;
+$default-second-color: white;
+$default-border-color: $default-background-color;
+$default-font-color: $default-background-color;
+
+$purple-color: purple;
+$blue-color: blue;
+$green-color: green;
+$yellow-color: yellow;
+$orange-color: orange;
+$red-color: red;
+$default-border: 3px double $default-border-color;
+
+@mixin gradient-style($type: linear, $direction:to bottom, $first-color:$default-background-color, $second-color:$default-second-color){
+    background-image:#{$type}-gradient($direction, $first-color, $second-color);   
+}
+
+@mixin default-li-style($padding: 0, $margin: 0, $radius: 10px, $type: linear, $direction:to bottom, $first-color: $default-background-color, $second-color:$default-second-color) {
+    width: 130px;
+    height: 150px;
+    padding: $padding;
+    margin: $margin;
+    border-radius: $radius;
+    @include gradient-style($type, $direction, $first-color, $second-color);
+}
+
+@mixin li-style-vertical($first-color){
+    @include default-li-style($first-color: $first-color);
+}
+
+@mixin li-style-horizontal($first-color, $direction: to right) {
+    @include default-li-style($direction: $direction, $first-color: $first-color);
+}
+
+@mixin li-style-diagonal($first-color, $direction: to bottom right) {
+    @include default-li-style($direction: $direction, $first-color: $first-color);
+}
+
+@mixin li-style-radial ($first-color, $type:radial, $direction: null) {
+    @include default-li-style($type: $type, $direction: $direction, $first-color: $first-color);
+}
+
+@mixin default-section-style ($width: 900px, $border: $default-border) {
+    width: $width;
+    border: $border;
+    padding: 0 20px;
+    margin: 10px auto;
+}
+
+@mixin list-section-style($border-color: $default-background-color) {
+    @include default-section-style($width: 850px, $border: 1px ridge $default-border-color);
+    padding: 0 10px;
+}
+
+body {
+    #wrapper {
+        width: 950px;
+        height: 1450px;
+        margin: 0 auto;
+        background-color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: $default-font-color;
+        border: 3px double #808080;
+        padding: 20px;
+        header, main, footer {
+            margin: 0 auto;
+        }
+
+    }
+
+    @include gradient-style;
+}
+
+section {
+    @include default-section-style;
+}
+
+section.list-section {
+    @include list-section-style;
+}
+
+h1, h2, p, a {
+    text-align: center;
+} 
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    li {
+        display: inline-block;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+ul#button-list {
+    display:inline-block;
+    text-align: center;
+    margin-left: 150px;
+    li {
+        text-align: center;
+        /*padding: 5px 10px;*/
+        background-color: white;
+        margin-left: 50px;
+        border: $default-border;
+        &:hover {
+            @include gradient-style;
+            color: white;
+        }
+        a {
+            width: 80px;
+            height: 26px;
+            display: inline-block;
+            padding: 5px 10px;
+            min-width:80px;
+            &:hover {
+                @include gradient-style;
+                color: white;
+            }
+        }
+    }
+}
+
+a {
+    color: $default-font-color;
+}
+
+ul#bottom-links {
+    display: block;
+    text-align: center;
+    li {
+        display: block;
+    }
+}
+
+footer > section > a {
+    display: block;
+    text-align: center;
+}
+
+ul#vertical {
+    li.purple {
+        @include li-style-vertical($first-color: $purple-color);
+    }
+    li.blue {
+        @include li-style-vertical($first-color: $blue-color);
+    }
+    li.green {
+        @include li-style-vertical($first-color: $green-color);
+    }
+    li.yellow {
+        @include li-style-vertical($first-color: $yellow-color);
+    }
+    li.orange {
+        @include li-style-vertical($first-color: $orange-color);
+    }
+    li.red {
+        @include li-style-vertical($first-color: $red-color);
+    }
+}
+
+ul#horizontal {
+    li.purple {
+        @include li-style-horizontal($direction: to right, $first-color: $purple-color);
+    }
+    li.blue {
+        @include li-style-horizontal($first-color: $blue-color);
+    }
+    li.green {
+        @include li-style-horizontal($first-color: $green-color);
+    }
+    li.yellow {
+        @include li-style-horizontal($first-color: $yellow-color);
+    }
+    li.orange {
+        @include li-style-horizontal($first-color: $orange-color);
+    }
+    li.red {
+        @include li-style-horizontal($first-color: $red-color);
+    }
+}
+
+ul#diagonal {
+    li.purple {
+        @include li-style-diagonal($first-color: $purple-color);
+    }
+    li.blue {
+        @include li-style-diagonal($first-color: $blue-color);
+    }
+    li.green {
+        @include li-style-diagonal($first-color: $green-color);
+    }
+    li.yellow {
+        @include li-style-diagonal($first-color: $yellow-color);
+    }
+    li.orange {
+        @include li-style-diagonal($first-color: $orange-color);
+    }
+    li.red {
+        @include li-style-diagonal($first-color: $red-color);
+    }
+}
+
+ul#radial {
+    li.purple {
+        @include li-style-radial($first-color: $purple-color);
+    }
+    li.blue {
+        @include li-style-radial($first-color: $blue-color);
+    }
+    li.green {
+        @include li-style-radial($first-color: $green-color);
+    }
+    li.yellow {
+        @include li-style-radial($first-color: $yellow-color);
+    }
+    li.orange {
+        @include li-style-radial($first-color: $orange-color);
+    }
+    li.red {
+        @include li-style-radial($first-color: $red-color);
+    }
+}
